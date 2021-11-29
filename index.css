@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans';
+    background-color: rgb(2, 2, 2);
+    color: white;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header/nav stuff */
+@media only screen and (min-width: 600px) {
+    header {
+        display: flex;
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    header img {
+        margin-top: .5rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    header div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header div p {
+        padding-bottom: 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 3.4rem;
+    }
+
+    nav a {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        text-shadow: none;
+        color: rgb(255, 94, 0);
+        font-size: 1rem;
+    }
+
+    nav .active a {
+        color: #ff0000;
+    }
+
+    nav a:hover {
+        color: rgb(184, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 599px) {
+
+    header {
+        display: flex;
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    header img {
+        margin-top: .5rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    header div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header div p {
+        padding-bottom: 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-between;
+        height: 30vh;
+    }
+
+    nav a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-shadow: none;
+        color: rgb(255, 94, 0);
+        font-size: 1.4rem;
+        border-bottom: solid 1px;
+        background-color: transparent;
+    }
+
+    nav .active a {
+        color: #ff0000;
+    }
+
+    nav a:hover {
+        color: rgb(184, 0, 0);
+    }
+
+}
+
+/* body stuff */
+
+#projects {
+    padding: 1rem 1rem 2.5rem;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-img img {
+    width: 100%;
+    height: auto;
+}
+
+#hero-img figcaption {
+    display: flex;
+    justify-content: center;
+    font-size: .75rem;
+    color: rgb(153, 153, 153);
+}
+
+ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 3.5rem;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+ol li a {
+    padding: .4rem .9rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: 'Work Sans';
+    background-color: rgb(22, 22, 22);
+    border-style: solid;
+    border-color: rgb(22, 22, 22);
+    border-width: 0px;
+    border-radius: 20px;
+}
+
+ol li a:hover {
+    background-image: linear-gradient(to bottom, #ff0000, #610000);
+}
+
+dl {
+    padding-left: 1rem;
+    line-height: 1.7rem;
+}
+
+dl dd {
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+dl dt {
+    color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+
+/* Index ^ Resume v Gallery v+v */
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.7rem;
+}
+
+#bio h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+#bio p {
+    color: rgb(255, 255, 255);
+}
+
+#bio a {
+    color: rgb(255, 0, 0);
+}
+
+#bio address {
+    color: rgb(255, 0, 0);
+}
+
+h2 {
+    padding-bottom: .5rem;
+}
+
+section {    
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(43, 33, 34);
+}
+
+section ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.2rem;
+    list-style-type: circle;
+    line-height: 2rem;
+}
+
+section a {
+    color: rgb(255, 94, 0);
+}
+
+/* Resume ^ Gallery v */
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+}
+
+.galfig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8rem;
+    padding: 1rem;
+}
+
+.galfig img:hover {
+    box-shadow: 2px 4px 20px rgba(0, 183, 255, 0.212);
+}
+
+.galfig figcaption {
+    margin-top: .5rem;
+    background-color: transparent;
+}
+
+.galfig figcaption em {
+    background-color: transparent;
+}
+
+/* unit 5 ^ unit 6 v */
+
+.summaries-link {
+    padding: 2rem;
+    text-align: right;
+    color: rgb(255, 94, 0);
+}
+
+.summaries-link:hover {
+    text-decoration: underline;
+}
+
+.back-to-top {
+    color: rgb(255, 94, 0);
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.back-to-top:hover {
+    text-decoration: underline;
+}
+
+.reelRequestH1 {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.frmHeader {
+    color: rgb(255, 94, 0);
+    padding-bottom: .5rem;
+}
+
+fieldset {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    padding-top: .3rem;
+    border-radius: 5px;
+    border-color: rgb(43, 33, 34);
+}
+
+form [type=text], form [type=tel], form [type=email], form select, form textarea, form [type=checkbox], form [type=radio] {
+    display: block;
+    padding: .3rem;
+    background-color: rgb(27, 27, 27);
+    border-style: solid;
+    border-color: transparent;
+}
+
+form select {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    padding: .5rem;
+}
+
+.selectBox{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+
+.selectHeader {
+    color: rgb(255, 94, 0);
+}
+
+.commentsBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentsArea {
+    min-height: 100px;
+}
+
+.commentsHeader {
+    color: rgb(255, 94, 0);
+}
+
+.contactInfoFS label {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+
+.submitButton {
+    padding: .2rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+}
+
+.submitButton {
+    border-radius: 14px;
+    border-color: transparent;
+    border-color: rgb(204, 0, 0);
+    box-shadow: 0px 4px 10px black;
+    background-color: rgb(184, 0, 0);
+    color: white;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    font-size: 1.1rem;
+}
+
+.thanksH1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+form [type=text], form [type=tel], form textarea {
+    color: #fff;
+}
+
+footer {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 2rem;
+    padding-bottom: .8rem;
+}
+
+footer p {
+    color: rgb(105, 105, 105);
+    font-size: .8em;
+}
+
+.thanksFooter {
+    padding-top: 30vw;
+}
