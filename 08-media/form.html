@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/celluloid icon copy.svg" alt="logo" width="auto" height="50">
+        <div>
+            <h1 id="index-header"><a href="index.html">Kate Elieson Art Direction</a></h1>
+            <p>2021 portfolio</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a href="form.html">Request a Reel</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sample.html">Work Sample</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="reelRequestH1">Request a Reel</h1>
+        
+        <form method="get" action="thanks.html">
+        
+            <fieldset class="contactInfoFS">
+            <legend class="frmHeader">Contact Information</legend>
+            <label>First Name*<input type="text" name="fName" required>
+            </label>
+            <label>Last Name*<input type="text" name="lName" required>
+            </label>
+            <label>Production Company*<input type="text" name="prodComp" required>
+            </label>
+            <label>Phone*<input type="tel" name="phone" required
+            placeholder="123-456-7890">
+            </label>
+            <label>Email*<input type="email" name="emailAdd" required placeholder="janedoe@hmail.com">
+            </label>
+            </fieldset>
+    
+            <fieldset>
+            <legend class="frmHeader">Which roles are you scouting for?</legend>
+                <label><input type="checkbox" name="job"
+                value="chosen">Art Direction</label>
+                <label><input type="checkbox" name="job"
+                value="chosen">Props</label>
+                <label><input type="checkbox" name="job"
+                value="chosen">Set Dressing</label>
+                <label><input type="checkbox" name="job"
+                value="chosen">N/A or Other</label>    
+            </fieldset>
+            <fieldset>
+            <legend class="frmHeader">TV, film, or theatre?</legend>
+                <label><input type="radio" name="medium" value="tv">TV</label>
+                <label><input type="radio" name="medium" value="film">Film</label>
+                <label><input type="radio" name="medium" value="theatre">Theatre</label>
+                <label><input type="radio" name="medium" value="other">Other</label>
+            </fieldset>
+            <fieldset>
+                <label class="selectBox"><p class="selectHeader">Location</p>
+                <select name="location">
+                    <option value="none">Please Select</option>
+                    <option value="tx">Texas</option>
+                    <option value="dfwL">DFW - Local</option>
+                    <option value="ut">Utah</option>
+                    <option value="utL">SLC - Local</option>
+                    <option value="la">LA - Non-Local</option>   
+                </select>
+                </label>
+            </fieldset>
+            <fieldset>
+            <label class="commentsBox"><p class="commentsHeader">Tell me a bit more about your project...</p>
+                <textarea name="comments" class="commentsArea"></textarea>
+            </label>
+    
+            <input type="submit" value="Send Reel Request" class="submitButton">
+            </fieldset>
+            </form>
+    </main>
+    <footer>
+        <p>&copy; 2021 &bull; Kate Elieson</p>
+    </footer>
+</body>
+</html>
